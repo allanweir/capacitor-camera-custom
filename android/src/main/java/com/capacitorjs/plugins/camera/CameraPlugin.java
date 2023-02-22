@@ -245,7 +245,7 @@ public class CameraPlugin extends Plugin {
         try {
             settings.setMimeTypes(call.getArray("mimeTypes", JSArray.from(new String[]{"image/jpeg", "image/png"})));
         } catch (JSONException ex) {
-
+            Logger.error(getLogTag(), ex);
         }
         return settings;
     }

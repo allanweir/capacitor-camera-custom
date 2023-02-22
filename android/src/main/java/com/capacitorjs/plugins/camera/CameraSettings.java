@@ -108,6 +108,6 @@ public class CameraSettings {
     }
 
     public void setMimeTypes(JSArray mimeTypes) throws JSONException {
-        this.mimeTypes = (String[]) mimeTypes.toList().toArray();
+        this.mimeTypes = mimeTypes.toList().toArray(new String[0]);
     }
 }
